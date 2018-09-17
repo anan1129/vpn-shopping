@@ -1,0 +1,20 @@
+.scroll-tip-wrap{
+  width:100%;
+  overflow: hidden;
+  position: relative;
+  height:50px;
+
+  .scroll-tip-content{
+    position:absolute;
+    right: -100%;
+    height:50px;
+    line-height:50px;
+    width:100%;
+    animation: scrollTip 40s linear infinite;
+  }
+
+  @keyframes scrollTip {
+    0%{right:-100%;}
+    100%{right:100%}
+  }
+}
