@@ -10,6 +10,7 @@ import {UserInfoComponent} from './user-info/user-info.component';
 import {UpdateUserInfoComponent} from './update-user-info/update-user-info.component';
 import {LoginComponent} from './login/login.component';
 import {RegisterComponent} from './register/register.component';
+import {HostListComponent} from './host-list/host-list.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -24,6 +25,7 @@ const routes: Routes = [
   { path: 'updateUserInfo', component: UpdateUserInfoComponent },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
+  { path: 'hostList', component: HostListComponent },
 ];
 
 @NgModule({

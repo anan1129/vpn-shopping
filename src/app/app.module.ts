@@ -16,6 +16,7 @@ import { UpdateUserInfoComponent } from './update-user-info/update-user-info.com
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { ContactComponent } from './contact/contact.component';
+import { HostListComponent } from './host-list/host-list.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { ContactComponent } from './contact/contact.component';
     UpdateUserInfoComponent,
     LoginComponent,
     RegisterComponent,
-    ContactComponent
+    ContactComponent,
+    HostListComponent
   ],
   imports: [
     BrowserModule,
