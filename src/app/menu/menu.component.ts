@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import * as $ from "jquery";
+import {ActivatedRoute, ActivationEnd, NavigationEnd, Router} from '@angular/router';
 
 @Component({
   selector: 'app-menu',
@@ -8,10 +8,17 @@ import * as $ from "jquery";
 })
 export class MenuComponent implements OnInit {
 
-  constructor() { }
+  constructor(private activatedRoute:ActivatedRoute,private router:Router) {
+    this.router.events.subscribe((e)=>{
+
+      if(e instanceof ActivationEnd){
+        console.log(e);
+      }
+    })
+
+  }
 
   ngOnInit() {
-    console.log($);
   }
 
 }

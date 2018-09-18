@@ -13,7 +13,7 @@ import {RegisterComponent} from './register/register.component';
 import {HostListComponent} from './host-list/host-list.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
+  { path: '',redirectTo:'/home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'record', component: RecordComponent },
   { path: 'products', component: ProductsComponent },

@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light navbar-dark bg-dark">
   <a class="navbar-brand" href="#">logo</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -6,41 +6,41 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
+      <li class="nav-item " routerLinkActive="active">
         <a class="nav-link" routerLink="/home">主页 <span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <li class="nav-item dropdown " routerLinkActive="active">
+        <a class="nav-link dropdown-toggle" href="#" id="store" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           商店
         </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item"  routerLink="/products">购买套餐</a>
-          <a class="dropdown-item" routerLink="/record">购买记录</a>
-          <a class="dropdown-item" routerLink="/hostList">主机列表</a>
+        <div class="dropdown-menu" aria-labelledby="store">
+          <a class="dropdown-item"  routerLink="/products" routerLinkActive="active">购买套餐</a>
+          <a class="dropdown-item" routerLink="/record" routerLinkActive="active">购买记录</a>
+          <a class="dropdown-item" routerLink="/hostList" routerLinkActive="active">主机列表</a>
         </div>
       </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <li class="nav-item dropdown" routerLinkActive="active">
+        <a class="nav-link dropdown-toggle" href="#" id="help" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           帮助
         </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" routerLink="teach">使用教程</a>
-          <a class="dropdown-item" routerLink="download">下载</a>
+        <div class="dropdown-menu" aria-labelledby="help" >
+          <a class="dropdown-item" routerLink="teach" routerLinkActive="active">使用教程</a>
+          <a class="dropdown-item" routerLink="download" routerLinkActive="active">下载</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item"  routerLink="/contact">联系我们</a>
+          <a class="dropdown-item"  routerLink="/contact" routerLinkActive="active">联系我们</a>
         </div>
       </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <li class="nav-item dropdown" routerLinkActive="active">
+        <a class="nav-link dropdown-toggle" href="#" id="userInfo" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           个人中心
         </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" routerLink="/userInfo">用户信息</a>
-          <a class="dropdown-item" routerLink="/updateUserInfo">修改资料</a>
+        <div class="dropdown-menu" aria-labelledby="userInfo">
+          <a class="dropdown-item" routerLink="/userInfo" routerLinkActive="active">用户信息</a>
+          <a class="dropdown-item" routerLink="/updateUserInfo" routerLinkActive="active">修改资料</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" routerLink="/login">登录</a>
-          <a class="dropdown-item" routerLink="/register">注册</a>
-          <a class="dropdown-item" routerLink="/login">注销</a>
+          <a class="dropdown-item" routerLink="/login" routerLinkActive="active">登录</a>
+          <a class="dropdown-item" routerLink="/register" routerLinkActive="active">注册</a>
+          <a class="dropdown-item" routerLink="/login" routerLinkActive="active">注销</a>
         </div>
       </li>
     </ul>
