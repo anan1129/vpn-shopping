@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import {ActivatedRoute, ActivationEnd, NavigationEnd, Router} from '@angular/router';
 
 @Component({
   selector: 'app-menu',
@@ -8,13 +7,8 @@ import {ActivatedRoute, ActivationEnd, NavigationEnd, Router} from '@angular/rou
 })
 export class MenuComponent implements OnInit {
 
-  constructor(private activatedRoute:ActivatedRoute,private router:Router) {
-    this.router.events.subscribe((e)=>{
+  constructor() {
 
-      if(e instanceof ActivationEnd){
-        console.log(e);
-      }
-    })
 
   }
 

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {Router} from '@angular/router';
+const $=window['$'];
 
 @Component({
   selector: 'app-teach',
@@ -7,14 +7,12 @@ import {Router} from '@angular/router';
   styleUrls: ['./teach.component.scss']
 })
 export class TeachComponent implements OnInit {
-
-  constructor(private router:Router) { }
+  constructor() { }
 
   ngOnInit() {
-  }
-
-  jump(anchor){
-    console.log(anchor)
-    this.router.navigate(['teach'],{fragment:anchor});
+    $('body').on('activate.bs.scrollspy', function (e) {
+      console.log(e);
+      // do something…
+    });
   }
 }
